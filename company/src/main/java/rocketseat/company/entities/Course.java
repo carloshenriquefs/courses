@@ -7,7 +7,7 @@ import lombok.NoArgsConstructor;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
 
-import java.time.Instant;
+import java.time.LocalDateTime;
 import java.util.UUID;
 
 @Data
@@ -28,9 +28,9 @@ public class Course {
     private Active active;
 
     @CreationTimestamp
-    private Instant created_at;
+    private LocalDateTime created_at;
 
     @UpdateTimestamp
-    private Instant updated_at;
+    private LocalDateTime updated_at;
 
 }
