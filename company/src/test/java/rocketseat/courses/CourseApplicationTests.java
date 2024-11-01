@@ -1,10 +1,10 @@
-package rocketseat.company;
+package rocketseat.courses;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class CompanyApplicationTests {
+class CourseApplicationTests {
 
 	@Test
 	void contextLoads() {
