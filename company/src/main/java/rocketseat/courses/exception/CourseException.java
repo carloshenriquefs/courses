@@ -1,4 +1,4 @@
-package rocketseat.company.exception;
+package rocketseat.courses.exception;
 
 public class CourseException extends RuntimeException {
     private static final long serialVersionUID = 1L;
@@ -6,6 +6,10 @@ public class CourseException extends RuntimeException {
 
     public CourseException(String msg, Throwable throwable, ErrorTypeEnum errorType) {
         super(msg, throwable);
+        this.errorType = errorType;
+    }
+
+    public CourseException(ErrorTypeEnum errorType) {
         this.errorType = errorType;
     }
 
