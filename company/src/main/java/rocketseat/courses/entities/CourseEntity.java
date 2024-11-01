@@ -1,4 +1,4 @@
-package rocketseat.company.entities;
+package rocketseat.courses.entities;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -23,7 +23,7 @@ import java.time.LocalDateTime;
 public class CourseEntity {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     private String name;
@@ -41,11 +41,11 @@ public class CourseEntity {
     @PrePersist
     protected void onCreate() {
         createdAt = LocalDateTime.now();
-        active = Active.ACTIVE;
     }
 
     @PreUpdate
     protected void onUpdate() {
         updatedAt = LocalDateTime.now();
     }
+
 }

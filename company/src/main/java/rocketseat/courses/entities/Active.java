@@ -1,4 +1,4 @@
-package rocketseat.company.entities;
+package rocketseat.courses.entities;
 
 public enum Active {
 
