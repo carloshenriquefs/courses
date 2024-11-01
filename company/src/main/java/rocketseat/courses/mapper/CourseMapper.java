@@ -1,9 +1,9 @@
-package rocketseat.company.mapper;
+package rocketseat.courses.mapper;
 
 import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
-import rocketseat.company.dto.CourseDTO;
-import rocketseat.company.entities.CourseEntity;
+import rocketseat.courses.dto.CourseDTO;
+import rocketseat.courses.entities.CourseEntity;
 
 @Mapper(componentModel = "spring")
 public interface CourseMapper {
